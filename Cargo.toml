@@ -1,0 +1,10 @@
+[package]
+name = "timesheet"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A validating parser and pretty printer for plain text time sheets."
+
+[[bin]]
+name = "timesheet"
+path = "src/main.rs"
