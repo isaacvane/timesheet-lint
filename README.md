@@ -42,6 +42,12 @@ when:
 cargo run -- path/to/september.timesheet
 ```
 
+Or pipe input in instead of naming a file:
+
+```
+cat path/to/september.timesheet | cargo run -- --stdin
+```
+
 ```
 2026-09-15
   09:00-12:30  acme/website  build the login page
@@ -83,6 +89,6 @@ with only the standard library.
 
 ## Status
 
-Early skeleton: single-file-per-run parsing, no per-project rollups yet, no
-way to read from stdin. See the code for the exact grammar until this
-README grows a formal spec.
+Early skeleton: no per-project rollups yet, no week/month summaries, no
+`--strict` mode for unpaid gaps between entries. See the code for the exact
+grammar until this README grows a formal spec.
